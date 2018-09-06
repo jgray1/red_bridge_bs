@@ -1,6 +1,6 @@
 
 body {
-    background-color: #fff;
+    background-color: #f4f4f4;
     color: #555;
     font-family: 'Lato' , 'Arial' , sans-serif;
     font-weight: 300;
@@ -18,7 +18,6 @@ h1 {
     font-size: 2.5rem;
     word-spacing: 4px;
     letter-spacing: 1px;
-
 }
 
 h2 {
@@ -44,6 +43,22 @@ h2:after {
     margin-top: 30px;
 }
 
+a:link,
+a:visited {
+    color: #4cadbf;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid transparent;
+    /* -webkit-transition: border-bottom 0.2s, color 0.2s; */
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:visited {
+    color: #555;
+    border-bottom: 1px solid #4cadbf;
+}
+
 nav.navbar {
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -53,13 +68,58 @@ nav.navbar {
    /* width: auto; */
 }
 
-.btn-danger:link,
-.btn-danger:visited {
+.btn:link,
+.btn:visited,
+input[type=submit] {
   display: inline-block;
   padding: 10px 30px;
   border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-danger:link,
+.btn-danger:visited {
+  color: #f4f4f4;
+  /* display: inline-block;
+  padding: 10px 30px;
+  border-radius: 200px; */
   background-color: #B4261F;
   border: 1px solid #B4261F;
+}
+
+.btn-danger:hover,
+.btn-danger:active {
+    background-color: #4cadbf;
+    border: 1px solid #4cadbf;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #4cadbf;
+    color:  #4cadbf;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #4cadbf;
+    color:  #fff;
+    background-color: #4cadbf;
+}
+
+.btn-info:link,
+.btn-info:visited {
+  color: #f4f4f4;
+  /* display: inline-block;
+  padding: 10px 30px;
+  border-radius: 200px; */
+  background-color: #4cadbf;
+  border: 1px solid #4cadbf;
+}
+
+.btn-info:hover,
+.btn-info:active {
+  background-color: #fff;
+  color: #4cadbf;
 }
 
 header {
@@ -79,8 +139,8 @@ header {
                0px 19px 23px rgba(0,0,0,0.1);
 }
 
-.section-features {
-  padding: 80px 0;
+section {
+  padding-top: 80px;
 }
 
 .long-copy {
@@ -116,4 +176,25 @@ header {
     /* If we scale to 100% of the img size, a white space appears below the img  */
     opacity: 1;
     transform: scale(1.03);
+}
+
+.hiking-image {
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(images/Lovers_Leap.jpg);
+  background-size: cover;
+  /* Keeps the background fixed so the content scrolls over it   */
+  background-attachment: fixed;
+  padding-bottom: 4rem;
+}
+
+.card {
+  padding-bottom: 1rem;
+}
+.card-header {
+    background-color: #4cadbf;
+    color: black;
+}
+
+footer {
+  background: linear-gradient(rgba(0,0,0,0.8) ,rgba(0,0,0,0.8));
+  margin-top: 2rem;
 }

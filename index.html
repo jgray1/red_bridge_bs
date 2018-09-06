@@ -7,14 +7,25 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Core CSS file -->
+    <link rel="stylesheet" href="css/photoswipe.css">
+
+    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+     In the folder of skin CSS file there are also:
+     - .png and .svg icons sprite,
+     - preloader.gif (for browsers that do not support CSS animations) -->
+    <link rel="stylesheet" href="css/default-skin/default-skin.css">
+
+    <link href=" https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <title>The Red Bridge Cottage</title>
   </head>
 
   <body>
 
     <header>
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#"><img class="logo img-fluid" src="css/images/RBC_ColorLogo400.png" /></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,16 +35,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">The Cottage <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#the_cottage">The Cottage <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Gallery</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Hot Spring</a>
+              <a class="nav-link" href="#hot_springs">Hot Spring</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">More Info</a>
+              <a class="nav-link" href="#more_info">More Info</a>
             </li>
           </ul>
         </div>
@@ -53,7 +64,7 @@
 
   </header>
 
-  <section class="container section-features">
+  <section class="container section-features" id="the_cottage">
     <div class="row ">
         <div class="col-lg-12">
         <h2 class="text-center text-uppercase">Your Home in the Heart of Hot Springs</h2>
@@ -99,120 +110,184 @@
     </div><!-- End Row --->
   </section><!-- End section-features -->
 
-  <section class="gallery">
+  <section class="gallery" id="gallery">
     <div class="row">
-      <div class="col-lg-3 col-md-4 col-sm-6 gallery-photo">
-        <img class="img-fluid" src="images/1.jpg" />
+      <div class="col-lg-3 col-sm-6 gallery-photo">
+        <a class="lightbox" href="images/1.jpg">
+          <img class="img-fluid" src="images/1.jpg" />
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 gallery-photo">
-        <img class="img-fluid" src="images/2.jpg" />
+      <div class="col-lg-3 col-sm-6 gallery-photo">
+        <a class="lightbox" href="images/2.jpg">
+          <img class="img-fluid" src="images/2.jpg" />
+        </a>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 gallery-photo">
-        <img class="img-fluid" src="images/3.jpg" />
+      <div class="col-lg-3 col-sm-6 gallery-photo">
+        <a class="lightbox" href="images/3.jpg">
+          <img class="img-fluid" src="images/3.jpg" />
+        </a>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 gallery-photo">
-        <img class="img-fluid" src="images/4.jpg" />
+      <div class="col-lg-3 col-sm-6 gallery-photo">
+        <a class="lightbox" href="images/4.jpg">
+          <img class="img-fluid" src="images/4.jpg" />
+        </a>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 gallery-photo">
-        <img class="img-fluid" src="images/5.jpg" />
+      <div class="col-lg-3 col-sm-6 gallery-photo">
+        <a class="lightbox" href="images/5.jpg">
+          <img class="img-fluid" src="images/5.jpg" />
+        </a>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 gallery-photo">
-        <img class="img-fluid" src="images/6.jpg" />
+      <div class="col-lg-3 col-sm-6 gallery-photo">
+        <a class="lightbox" href="images/6.jpg">
+          <img class="img-fluid" src="images/6.jpg" />
+        </a>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 gallery-photo">
-        <img class="img-fluid" src="images/7.jpg" />
+      <div class="col-lg-3 col-sm-6 gallery-photo">
+        <a class="lightbox" href="images/7.jpg">
+          <img class="img-fluid" src="images/7.jpg" />
+        </a>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 gallery-photo">
-        <img class="img-fluid" src="images/8.jpg" />
+      <div class="col-lg-3 col-sm-6 gallery-photo">
+        <a class="lightbox" href="images/8.jpg">
+          <img class="img-fluid" src="images/8.jpg" />
+        </a>
       </div>
     </div>
   </section><!--- End Section Gallery -->
 
-  <section class="container section-plans" id="todo">
-      <div class="row">
+  <section class="container" id="hot_springs">
+    <div class="row ">
         <div class="col-lg-12">
-          <h2 class="text-center text-uppercase">Start your adventure today</h2>
+        <h2 class="text-center text-uppercase">Something for everyone</h2>
+        <p class="long-copy text-justify">
+           Go for a hike up to Lover's Leap or on the Appalachian Trail which runs right through downtown. Challenge yourself on the whitewater of the French Board River. How about horseback riding or cycling? Maybe just kicking back and hearing some great live music is more your thing. Whatever it is you are looking for, Hot Springs has something to offer.
+        </p>
+      </div>
+    </div><!--- End Row --->
+  </section>
+
+  <section class="hiking-image">
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-4">
+            <div class="card plan-box">
+                <div>
+                    <h3 class="card-header">In Town</h3>
+                </div>
+
+                <div card-body>
+                    <p>
+                        <ul>
+                          <li><a href="https://www.nchotsprings.com">Hot Springs Resort & Spa</a></li>
+                          <li><a href="https://hotspringsmarket.wordpress.com">Hot Springs Market</a></li>
+                          <li><a href="http://madisoncountyarts.com">Madison County Arts Council</a></li>
+                          <li><a href="https://www.hotspringsnc.org">Local News and Information</a></li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="mx-auto">
+                    <a href="#" class="btn btn-ghost">Learn More</a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="row">
-          <div class="col-lg-4">
-              <div class="card plan-box">
-                  <div>
-                      <h3 class="card-header">In Town</h3>
+
+        <div class="col-lg-4">
+            <div class="card plan-box">
+                <div>
+                    <h3 class="card-header">Outdoor Adventures</h3>
+                </div>
+
+                <div card-body>
+                  <ul>
+                    <li><a href="https://www.hotspringsnc.org/hiking-2/">Hiking</a></li>
+                    <li><a href="https://www.blueheronwhitewater.com/">White Water Rafting</a></li>
+                    <li>Tubing</li>
+                    <li>Fishing</li>
+                    <li>Road Cycling</li>
+                    <li>Mountain Biking</li>
+                    <li>Zip Lining</li>
+                    <li><a href="http://www.sandybottomtrailrides.net">Horseback Riding</a></li>
+                    <li>Motor Cycling</li>
+                  </ul>
+                </div>
+
+                <div class="mx-auto">
+                    <a href="#" class="btn btn-ghost">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class=" card plan-box">
+                <div>
+                    <h3 class="card-header">Festivals & Events</h3>
                   </div>
 
-                  <div card-body>
-                      <p>
-                          <ul>
-                            <li><a href="https://www.nchotsprings.com">Hot Springs Resort & Spa</a></li>
-                            <li><a href="https://hotspringsmarket.wordpress.com">Hot Springs Market</a></li>
-                            <li><a href="http://madisoncountyarts.com">Madison County Arts Council</a></li>
-                            <li><a href="https://www.hotspringsnc.org">Local News and Information</a></li>
-                          </ul>
-                      </p>
-                  </div>
+                <div card-body>
+                  <ul>
+                    <li><a href="http://wildgoosefestival.org">Wild Goose Festival</a></li>
+                    <li><a href="https://www.hotspringsnc.org/hot-springs-annual-trailfest/">Hot Springs Community Trail Fest</a></li>
+                    <li><a href="http://madisoncountyarts.com/events/bluff-mountain-music-festival/">Bluff Mountain Festival</a></li>
+                    <li><a href="http://www.hotspringsrallync.com">Hot Springs Motorcycle Weekend</a></li>
+                    <li><a href="http://www.frenchbroadriverfestival.com">French Board River Festival</a></li>
+                    <li><a href="https://www.hotspringsnc.org/4th-of-july-fireworks/">4th of July Celebration</a></li>
+                  </ul>
+                </div>
 
-                  <div>
-                      <a href="#" class="btn btn-ghost">Learn More</a>
-                  </div>
-              </div>
-          </div>
+                <div class="mx-auto">
+                    <a href="#" class="btn btn-ghost">Learn More</a>
+                </div>
+            </div>
+        </div>
 
-          <div class="col-lg-4">
-              <div class="card plan-box">
-                  <div>
-                      <h3 class="card-header">Outdoor Adventures</h3>
-                  </div>
-
-                  <div card-body>
-                    <ul>
-                      <li><a href="https://www.hotspringsnc.org/hiking-2/">Hiking</a></li>
-                      <li><a href="https://www.blueheronwhitewater.com/">White Water Rafting</a></li>
-                      <li>Tubing</li>
-                      <li>Fishing</li>
-                      <li>Road Cycling</li>
-                      <li>Mountain Biking</li>
-                      <li>Zip Lining</li>
-                      <li><a href="www.sandybottomtrailrides.net">Horseback Riding</a></li>
-                      <li>Motor Cycling</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                      <a href="#" class="btn btn-ghost">Learn More</a>
-                  </div>
-              </div>
-          </div>
-
-          <div class="col-lg-4">
-              <div class=" card plan-box">
-                  <div>
-                      <h3 class="card-header">Festivals & Events</h3>
-                    </div>
-
-                  <div card-body>
-                    <ul>
-                      <li><a href="http://wildgoosefestival.org">Wild Goose Festival</a></li>
-                      <li><a href="https://www.hotspringsnc.org/hot-springs-annual-trailfest/">Hot Springs Community Trail Fest</a></li>
-                      <li><a href="http://madisoncountyarts.com/events/bluff-mountain-music-festival/">Bluff Mountain Festival</a></li>
-                      <li><a href="http://www.hotspringsrallync.com">Hot Springs Motorcycle Weekend</a></li>
-                      <li><a href="http://www.frenchbroadriverfestival.com">French Board River Festival</a></li>
-                      <li><a href="https://www.hotspringsnc.org/4th-of-july-fireworks/">4th of July Celebration</a></li>
-                    </ul>
-                  </div>
-
-                  <div>
-                      <a href="#" class="btn btn-ghost">Learn More</a>
-                  </div>
-              </div>
-          </div>
-      </div>
+      </div><!--- End Row --->
+    </div>
 
   </section>
+
+  <section class="container" id="more_info">
+
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Need More Space?</h2>
+        <p class="text-center long-copy">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+    <div class="text-center">
+        <a class="btn btn-info" href="http://www.redbridgelodge.com/">Red Bridge Lodge</a>
+    </div>
+
+
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <p><a href="https://www.facebook.com/Red-Bridge-Cottage-Vacation-Rental-in-Hot-Springs-NC-276019139622666"><i class="fab fa-facebook-f"></i>
+
+Facebook</a></p>
+          <p class="subtext">Website by <a href="http://www.meetjohngray.com">John Gray</a> &copy; 2018</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+    </script>
+    <!-- Core PhotoSwipe JS file -->
+    <script src="js/photoswipe.min.js"></script>
+    <!-- PhotoSwipe UI JS file -->
+    <script src="js/photoswipe-ui-default.min.js"></script>
   </body>
 </html>
