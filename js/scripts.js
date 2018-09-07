@@ -2,11 +2,10 @@ baguetteBox.run('.gallery', {
   buttons: 'auto'
 });
 
+//Source: https://gist.github.com/WebDevBooster/5fb2805fa19f4f9ae0d6bc9e3073e3e9
 $(function() {
   var topoffset = 70; //variable for menu height
-
   //Use smooth scrolling when clicking on navigation
-  //Source: https://gist.github.com/WebDevBooster/5fb2805fa19f4f9ae0d6bc9e3073e3e9
   $('.navbar-nav a').click(function() {
     if (location.pathname.replace(/^\//,'') ===
       this.pathname.replace(/^\//,'') &&
