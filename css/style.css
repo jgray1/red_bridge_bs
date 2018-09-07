@@ -8,9 +8,9 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-/* h1, h2, h3 {
-    text-transform: uppercase;
-} */
+/*------------------------*/
+/*REUSABLE COMPONENTS*/
+/*------------------------*/
 
 h1 {
     margin-bottom: 20px;
@@ -61,11 +61,6 @@ a:visited {
 
 nav.navbar {
   background-color: rgba(0, 0, 0, 0.8);
-}
-
- .logo {
-   height: 110px;
-   /* width: auto; */
 }
 
 .btn:link,
@@ -132,8 +127,13 @@ header {
   background-attachment: fixed;
 }
 
+.logo {
+  height: 75px;
+  /* width: auto; */
+}
+
 .main-text-box {
-  padding-top: 20%;
+  padding-top: 30%;
   text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
                0px 8px 13px rgba(0,0,0,0.1),
                0px 19px 23px rgba(0,0,0,0.1);
@@ -197,4 +197,33 @@ section {
 footer {
   background: linear-gradient(rgba(0,0,0,0.8) ,rgba(0,0,0,0.8));
   margin-top: 2rem;
+}
+
+/* LESS THAN 62 */
+@media (max-width: 61.9em) {
+  .main-text-box {
+      padding-top: 40%;
+  }
+
+  .gallery-photo img {
+    opacity: 1;
+    width: 100%;
+    height: 250px;
+    transform: none;
+  }
+
+  .gallery-photo img:hover {
+      /* If we scale to 100% of the img size, a white space appears below the img  */
+      transform: none;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+  }
+}
+
+/* LESS THAN 34 */
+@media (max-width: 33.9em) {
+  .main-text-box {padding-top: 70%;
+  }
 }
