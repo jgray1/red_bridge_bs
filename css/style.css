@@ -130,8 +130,8 @@ header {
   /* This does not work on iOS: solution is https://stackoverflow.com/questions/24154666/background-size-cover-not-working-on-ios */
   background-attachment scroll;
 }
-
-@media (min-width: 992px) {
+/* The below @media query accounts for a 10.5 iPad Pro */
+@media (min-width: 1112px) {
   header {
     background-attachment: fixed;
   }
@@ -199,7 +199,7 @@ section {
   padding-bottom: 4rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1112px) {
   .hiking-image {
     background-attachment: fixed;
   }
