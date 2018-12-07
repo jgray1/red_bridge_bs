@@ -195,7 +195,6 @@ section {
   background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(images/Lovers_Leap.jpg);
   background-size: cover;
   background-position: center;
-  /* Keeps the background fixed so the content scrolls over it   */
   background-attachment: scroll;
   padding-bottom: 4rem;
 }
