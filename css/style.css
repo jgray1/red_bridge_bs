@@ -1,6 +1,3 @@
-
-Testing
-
 body {
     background-color: #f4f4f4;
     color: #555;
@@ -131,8 +128,17 @@ header {
   height: 100vh;
   /* Keeps the background fixed so the content scrolls over it   */
   /* This does not work on iOS: solution is https://stackoverflow.com/questions/24154666/background-size-cover-not-working-on-ios */
-  background-attachment: fixed;
+  background-attachment scroll;
 }
+
+@media (min-width: 992px) {
+  header {
+    background-attachment: fixed;
+  }
+}
+
+
+
 
 .logo {
   height: 75px;
