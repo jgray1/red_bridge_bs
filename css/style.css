@@ -1,4 +1,3 @@
-
 body {
     background-color: #f4f4f4;
     color: #555;
@@ -129,8 +128,17 @@ header {
   height: 100vh;
   /* Keeps the background fixed so the content scrolls over it   */
   /* This does not work on iOS: solution is https://stackoverflow.com/questions/24154666/background-size-cover-not-working-on-ios */
-  background-attachment: fixed;
+  background-attachment scroll;
 }
+/* The below @media query accounts for a 10.5 iPad Pro */
+@media (min-width: 1112px) {
+  header {
+    background-attachment: fixed;
+  }
+}
+
+
+
 
 .logo {
   height: 75px;
@@ -170,8 +178,6 @@ section {
 
 .gallery-photo img {
   opacity: 0.7;
-  width: 100%;
-  height: 250px;
   transform: scale(1.15);
   /* This is triggered by the rule below   */
   transition: transform 0.5s, opacity 0.5s;
@@ -186,9 +192,15 @@ section {
 .hiking-image {
   background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(images/Lovers_Leap.jpg);
   background-size: cover;
-  /* Keeps the background fixed so the content scrolls over it   */
-  background-attachment: fixed;
+  background-position: center;
+  background-attachment: scroll;
   padding-bottom: 4rem;
+}
+
+@media (min-width: 1112px) {
+  .hiking-image {
+    background-attachment: fixed;
+  }
 }
 
 .card {
@@ -219,10 +231,9 @@ footer {
 
   .gallery-photo img {
     opacity: 1;
-    width: 100%;
-    height: 250px;
     transform: none;
   }
+
 
   .gallery-photo img:hover {
       /* If we scale to 100% of the img size, a white space appears below the img  */
