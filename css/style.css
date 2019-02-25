@@ -138,6 +138,18 @@ header {
   }
 } */
 
+/* Landscape */ 
+@media only screen and (min-device-width: 1112px) and (orientation: landscape) { 
+header {
+    background-attachment: fixed;
+  } }
+
+/*Portrait*/ 
+@media only screen and (min-device-width: 834px) and (orientation: portrait) { 
+header {
+    background-attachment: fixed;
+  } }
+
 .logo {
   height: 75px;
   /* width: auto; */
@@ -200,6 +212,17 @@ section {
     background-attachment: fixed;
   }
 } */
+/* Landscape */ 
+@media only screen and (min-device-width: 1112px) and (orientation: landscape) { 
+.hiking-image {
+    background-attachment: fixed;
+  } }
+
+/*Portrait*/ 
+@media only screen and (min-device-width: 834px) and (orientation: portrait) { 
+.hiking-image {
+    background-attachment: fixed;
+  } }
 
 .card {
   padding-bottom: 1rem;
