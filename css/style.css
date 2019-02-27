@@ -135,24 +135,26 @@ header {
   background-attachment scroll;
 }
 
-/* The below @media query accounts for a 10.5 iPad Pro */
-/* @media (min-width: 1112px) {
-  header {
-    background-attachment: fixed;
-  }
-} */
 
-/* Landscape */ 
-@media only screen and (min-device-width: 1112px) and (orientation: landscape) { 
-header {
-    background-attachment: fixed;
-  } }
+/* Landscape iPad Pro 10.5*/ 
+@media only screen 
+	and (min-device-width: 1112px) 
+	and (orientation: landscape) 
+	and (-webkit-min-device pixel-ratio: 1.5) { 
+		header {
+    		background-attachment: fixed;
+  		} 	
+  	}
 
-/*Portrait*/ 
-@media only screen and (min-device-width: 834px) and (orientation: portrait) { 
-header {
-    background-attachment: fixed;
-  } }
+/*Portrait iPad Pro 10.5*/ 
+@media only screen 
+	and (min-device-width: 834px) 
+	and (orientation: portrait)
+	and (-webkit-min-device pixel-ratio: 1.5) { 
+		header {
+    		background-attachment: fixed;
+  		} 
+  	}
 
 .logo {
   height: 75px;
@@ -211,22 +213,25 @@ section {
   padding-bottom: 4rem;
 }
 
-/* @media (min-width: 1112px) {
-  .hiking-image {
-    background-attachment: fixed;
-  }
-} */
-/* Landscape */ 
-@media only screen and (min-device-width: 1112px) and (orientation: landscape) { 
-.hiking-image {
-    background-attachment: fixed;
-  } }
+/* Landscape iPad Pro 10.5*/ 
+@media only screen 
+	and (min-device-width: 1112px)
+	and (orientation: landscape) 
+	and (-webkit-min-device pixel-ratio: 1.5) { 
+		.hiking-image {
+    		background-attachment: fixed;
+  		} 
+  	}
 
-/*Portrait*/ 
-@media only screen and (min-device-width: 834px) and (orientation: portrait) { 
-.hiking-image {
-    background-attachment: fixed;
-  } }
+/*Portrait iPad Pro 10.5*/ 
+@media only screen
+	and (min-device-width: 834px)
+	and (orientation: portrait)
+	and (-webkit-min-device pixel-ratio: 1.5) { 
+		.hiking-image {
+    	background-attachment: fixed;
+  		} 
+  	}
 
 .card {
   padding-bottom: 1rem;
