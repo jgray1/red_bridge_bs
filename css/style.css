@@ -73,7 +73,6 @@ a.navbar-brand:hover {
 .btn:link,
 .btn:visited,
 input[type=submit] {
-  display: inline-block;
   padding: 10px 30px;
   border-radius: 200px;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
@@ -136,24 +135,24 @@ header {
 }
 
 
-/* Landscape iPad Pro 10.5*/ 
-@media only screen 
-	and (min-device-width: 1112px) 
-	and (orientation: landscape) 
-	and (-webkit-min-device pixel-ratio: 1.5) { 
+/* Landscape iPad Pro 10.5*/
+@media only screen
+	and (min-device-width: 1112px)
+	and (orientation: landscape)
+	and (-webkit-min-device pixel-ratio: 1.5) {
 		header {
     		background-attachment: fixed;
-  		} 	
+  		}
   	}
 
-/*Portrait iPad Pro 10.5*/ 
-@media only screen 
-	and (min-device-width: 834px) 
+/*Portrait iPad Pro 10.5*/
+@media only screen
+	and (min-device-width: 834px)
 	and (orientation: portrait)
-	and (-webkit-min-device pixel-ratio: 1.5) { 
+	and (-webkit-min-device pixel-ratio: 1.5) {
 		header {
     		background-attachment: fixed;
-  		} 
+  		}
   	}
 
 .logo {
@@ -213,24 +212,24 @@ section {
   padding-bottom: 4rem;
 }
 
-/* Landscape iPad Pro 10.5*/ 
-@media only screen 
+/* Landscape iPad Pro 10.5*/
+@media only screen
 	and (min-device-width: 1112px)
-	and (orientation: landscape) 
-	and (-webkit-min-device pixel-ratio: 1.5) { 
+	and (orientation: landscape)
+	and (-webkit-min-device pixel-ratio: 1.5) {
 		.hiking-image {
     		background-attachment: fixed;
-  		} 
+  		}
   	}
 
-/*Portrait iPad Pro 10.5*/ 
+/*Portrait iPad Pro 10.5*/
 @media only screen
 	and (min-device-width: 834px)
 	and (orientation: portrait)
-	and (-webkit-min-device pixel-ratio: 1.5) { 
+	and (-webkit-min-device pixel-ratio: 1.5) {
 		.hiking-image {
     	background-attachment: fixed;
-  		} 
+  		}
   	}
 
 .card {
