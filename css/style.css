@@ -253,7 +253,8 @@ footer {
   margin-top: 2rem;
 }
 
-footer a:hover, a:visited {
+.footer-links:hover,
+.footer-links:visited {
 color: white;
 }
 
