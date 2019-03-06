@@ -11,7 +11,7 @@ $(document).ready(function() {
   $(function() {
     var topoffset = 70; //variable for menu height
     //Use smooth scrolling when clicking on navigation
-    $('.navbar-nav a').click(function() {
+    $('.navbar a').click(function() {
       if (location.pathname.replace(/^\//,'') ===
         this.pathname.replace(/^\//,'') &&
         location.hostname === this.hostname) {
@@ -25,24 +25,17 @@ $(document).ready(function() {
         } //target.length
       } //click function
     }); //smooth scrolling
-
   });
 
-  //Source: https://stackoverflow.com/questions/50172524/bootstrap-4-navbar-active-class
-  // $('.navbar-nav .nav-link').click(function(){
-  //   $('.navbar-nav .nav-link').removeClass('active');
-  //   $(this).addClass('active');
-  // });
-
-    function scrollActive(currentId) {
-    $('.section-spy').removeClass('active');
-    $(currentId).addClass('active');
+  //Source: https://stackoverflow.com/questions/40903678/bootstrap-scrollspy-add-remove-class-to-the-section-that-is-in-view
+  function scrollActive(currentId) {
+  $('.section-spy').removeClass('active');
+  $(currentId).addClass('active');
   }
 
-  $('.nav li').on('activate.bs.scrollspy', function(e) {
+  $('.nav-item').on('activate.bs.scrollspy', function(e) {
     var targetId = $(e.target).find('a').attr('href');
     scrollActive(targetId);
-
   })
 
 });
