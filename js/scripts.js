@@ -29,9 +29,20 @@ $(document).ready(function() {
   });
 
   //Source: https://stackoverflow.com/questions/50172524/bootstrap-4-navbar-active-class
-  $('.navbar-nav .nav-link').click(function(){
-    $('.navbar-nav .nav-link').removeClass('active');
-    $(this).addClass('active');
-  });
+  // $('.navbar-nav .nav-link').click(function(){
+  //   $('.navbar-nav .nav-link').removeClass('active');
+  //   $(this).addClass('active');
+  // });
+
+    function scrollActive(currentId) {
+    $('.section-spy').removeClass('active');
+    $(currentId).addClass('active');
+  }
+
+  $('.nav li').on('activate.bs.scrollspy', function(e) {
+    var targetId = $(e.target).find('a').attr('href');
+    scrollActive(targetId);
+
+  })
 
 });
